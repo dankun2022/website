@@ -65,6 +65,48 @@
                 </ul>
             </div>
         </div>
+
+
+        <!-- 产品优势 -->
+        <div class="section-panel section-advantage">
+            <img class="section-panel-title" src="@/assets/img/devsecops/product-advantage.png" alt="">
+            <div class="page-content">
+                <ul class="advantage-list">
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-1.png" alt="">
+                        <p class="advantage-intro">支持所有语言的代码扫描</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-2.png" alt="">
+                        <p class="advantage-intro">自定义引擎实现编排与自动化响应</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-3.png" alt="">
+                        <p class="advantage-intro">业内领先的扫描速度</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-4.png" alt="">
+                        <p class="advantage-intro">代码加密识别，（代码加密识别，无代码泄露风险）</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-5.png" alt="">
+                        <p class="advantage-intro">多种扫描引擎识别不用方式引入的开源组件</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-6.png" alt="">
+                        <p class="advantage-intro">全面识别版本许可证、组建许可证以及文件许可证，分析开源合规风险</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-7.png" alt="">
+                        <p class="advantage-intro">支持CI/CD集成，嵌入到企业代码研发过程中，从设计到发布全流程深入探测风险</p>
+                    </li>
+                    <li class="advantage-item text-center">
+                        <img class="advantage-icon" src="@/assets/img/devsecops/advantage-icon-8.png" alt="">
+                        <p class="advantage-intro">符合国际认可的软件物料清单标准</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -124,6 +166,31 @@
           font-size: 18px;
           color: #676B74;
         }
+      }
+    }
+  }
+}
+
+.section-advantage {
+  background-color: #999;
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    .advantage-item {
+      width: 309px;
+      height: 240px;
+      margin: 0 6px 40px;
+      padding: 25px 44px 0;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.93);
+      .advantage-icon {
+        width: 88px;
+        height: 88px;
+      }
+      .advantage-intro {
+        margin-top: 25px;
+        font-size: 18px;
+        color: #888;
       }
     }
   }
