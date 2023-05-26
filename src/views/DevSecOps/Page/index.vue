@@ -14,6 +14,57 @@
                 <img class="product-function-detail" src="@/assets/img/devsecops/product-function-detail.png">
             </div>
         </div>
+        
+        <!-- 产品特色 -->
+        <div class="section-panel section-feature">
+            <img class="section-panel-title" src="@/assets/img/devsecops/product-feature.png" alt="">
+            <div class="page-content">
+                <ul class="feature-list">
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-1.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">开发语言扫描</p>
+                        <p class="feature-intro">支持604位开发语言的扫描</p>
+                        </div>
+                    </li>
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-2.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">引入开源组件</p>
+                        <p class="feature-intro">多种检测引擎识别不同方式引入的开源组件，如：代码片段识别、文件识别、组件识别、构建识别等</p>
+                        </div>
+                    </li>
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-3.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">识别版本许可证</p>
+                        <p class="feature-intro">全面识别版本许可证与组件许可证，分析开源合规风险</p>
+                        </div>
+                    </li>
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-4.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">业界领先扫描速度</p>
+                        <p class="feature-intro">业界领先的扫描速度，单文件扫描仅需20微妙</p>
+                        </div>
+                    </li>
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-5.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">无代码泄漏风险</p>
+                        <p class="feature-intro">代码进行不可逆加密后识别，无代码泄露风险</p>
+                        </div>
+                    </li>
+                    <li class="feature-item flex">
+                        <img class="feature-icon" src="@/assets/img/devsecops/icon-feature-6.png" alt="">
+                        <div class="feature-desc">
+                        <p class="feature-title">海量数据储备</p>
+                        <p class="feature-intro">拥有海量数据储备，，嵌入到企业代码研发流程中，从设计到发布全流程深入探测其中风险</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -46,5 +97,35 @@
 
 .product-function-detail {
   width: 1278px;
+}
+.section-feature {
+  width: 100%;
+  height: 570px;
+  background: url('../assets/img/devsecops/product-feature-bg.png') no-repeat center/100% 100%;
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    .feature-item {
+      width: 33.33%;
+      padding-right: 66px;
+      margin-bottom: 50px;
+      .feature-icon {
+        width: 58px;
+        height: 58px;
+      }
+      .feature-desc {
+        margin-left: 6px;
+        .feature-title {
+          font-size: 20px;
+          color: #333333;
+        }
+        .feature-intro {
+          margin-top: 12px;
+          font-size: 18px;
+          color: #676B74;
+        }
+      }
+    }
+  }
 }
 </style>
