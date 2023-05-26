@@ -107,29 +107,81 @@
                 </ul>
             </div>
         </div>
+
+        <!-- 使用场景 -->
+        <div class="section-panel section-usage-scenario">
+            <img class="section-panel-title" src="@/assets/img/devsecops/usage-scenario.png" alt="">
+            <div class="page-content">
+                <ul class="usage-scenario-list flex flex-main-between">
+                    <li class="usage-scenario-item">
+                        <img class="usage-scenario-img" src="@/assets/img/devsecops/usage-scenario-1.png" alt="">
+                        <p class="usage-scenario-name flex flex-center">紫妍黛码安全合规管理</p>
+                    </li>
+                    <li class="usage-scenario-item">
+                        <img class="usage-scenario-img" src="@/assets/img/devsecops/usage-scenario-2.png" alt="">
+                        <p class="usage-scenario-name flex flex-center">第三方代码的安全合规审查</p>
+                    </li>
+                    <li class="usage-scenario-item">
+                        <img class="usage-scenario-img" src="@/assets/img/devsecops/usage-scenario-3.png" alt="">
+                        <p class="usage-scenario-name flex flex-center">软件侵权分析</p>
+                    </li>
+                    <li class="usage-scenario-item">
+                        <img class="usage-scenario-img" src="@/assets/img/devsecops/usage-scenario-4.png" alt="">
+                        <p class="usage-scenario-name flex flex-center">企业并购项目审计</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 使用场景 -->
+        <div class="section-panel section-deploy-mode">
+            <img class="section-panel-title" src="@/assets/img/devsecops/deploy-mode.png" alt="">
+            <div class="page-content">
+                <ul class="deploy-mode-list">
+                    <li class="deploy-mode-item flex flex-main-between">
+                        <div class="deploy-detail">
+                        <h3 class="deploy-name">私有云部署</h3>
+                        <p class="deploy-intro">SCA私有化部署在用户内部网络，加密监测，所有数据不出网。</p>
+                        </div>
+                        <img class="deploy-img" src="@/assets/img/devsecops/deploy-img.png" alt="">
+                    </li>
+                    <li class="deploy-mode-item flex flex-main-between">
+                        <div class="deploy-detail">
+                        <h3 class="deploy-name">公有云部署</h3>
+                        <p class="deploy-intro">SCA以SaaS的形式提供服务，对代码加密后进行监测，不接触
+            用户源代码。</p>
+                        </div>
+                        <img class="deploy-img" src="@/assets/img/devsecops/deploy-img.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
 </template>
 <script>
-    export default{
-        name:"Page"
-    }
+export default {
+  name:'Page'
+};
 </script>
+
 <style lang="scss" scoped>
-.section-opensource{
-    padding: 90px 0 60px;
+.section-opensource {
+  padding: 90px 0 60px;
 }
-.opensource-title{
-    display: inline-block;
-    font-size: 40px;
-    color: #3B3D40;
+.opensource-title {
+  display: inline-block;
+  font-size: 40px;
+  color: #3B3D40;
 }
-.opensource-desc{
-    display: inline-block;
-    margin-top: 22px;
-    font-size: 20px;
-    color: #666666;
+.opensource-desc {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 20px;
+  color: #666666;
 }
+
 .section-panel-title {
   display: block;
   width: 424px;
@@ -140,10 +192,11 @@
 .product-function-detail {
   width: 1278px;
 }
+
 .section-feature {
   width: 100%;
   height: 570px;
-  background: url('../assets/img/devsecops/product-feature-bg.png') no-repeat center/100% 100%;
+  background: url('@/assets/img/devsecops/product-feature-bg.png') no-repeat center/100% 100%;
   .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +244,53 @@
         margin-top: 25px;
         font-size: 18px;
         color: #888;
+      }
+    }
+  }
+}
+
+.section-usage-scenario {
+  .usage-scenario-list {
+    .usage-scenario-item {
+      width: 304px;
+      height: 260px;
+      background: #FFFFFF;
+      box-shadow: 2px 4px 12px 0px rgba(26, 67, 118, 0.31);
+      .usage-scenario-img {
+        width: 304px;
+        height: 184px;
+      }
+      .usage-scenario-name {
+        height: 76px;
+        font-size: 18px;
+        color: #666;
+      }
+    }
+  }
+}
+
+.section-deploy-mode {
+  .deploy-mode-list {
+    .deploy-mode-item {
+      & + .deploy-mode-item {
+        border-top: 1px solid #D2D2D2;
+      }
+      .deploy-detail {
+        padding-top: 50px;
+        .deploy-name {
+          font-size: 40px;
+          font-weight: bold;
+          color: #393D40;
+        }
+        .deploy-intro {
+          margin-top: 16px;
+          font-size: 20px;
+          color: #888888;
+        }
+      }
+      .deploy-img {
+        width: 630px;
+        height: 262px;
       }
     }
   }
