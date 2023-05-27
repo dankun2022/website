@@ -14,7 +14,7 @@
                 <img class="product-function-detail" src="@/assets/img/devsecops/product-function-detail.png">
             </div>
         </div>
-        
+
         <!-- 产品特色 -->
         <div class="section-panel section-feature">
             <img class="section-panel-title" src="@/assets/img/devsecops/product-feature.png" alt="">
@@ -167,6 +167,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page-content{
+    width: 1300px;
+    margin: 0 auto;
+}
+h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.flex{
+    display: flex;
+}
 .section-opensource {
   padding: 90px 0 60px;
 }
@@ -250,6 +262,7 @@ export default {
 }
 
 .section-usage-scenario {
+    justify-content: space-between;
   .usage-scenario-list {
     .usage-scenario-item {
       width: 304px;
